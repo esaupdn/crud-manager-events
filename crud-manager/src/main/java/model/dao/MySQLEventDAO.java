@@ -7,16 +7,6 @@ import model.Company;
 import model.Event;
 import model.ModelException;
 
-// SQL TABELA TB_EVENTS
-////CREATE TABLE IF NOT EXISTS `tb_events` (
-//`id` INT(11) AUTO_INCREMENT PRIMARY KEY,
-//`name` VARCHAR(128) NOT NULL,
-//`location` VARCHAR(128) NOT NULL,
-//`description` VARCHAR(128) NOT NULL, 
-//`email` VARCHAR(128) NOT NULL,
-//`company_id` INT NOT NULL,
-//FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`)
-//);
 
 public class MySQLEventDAO implements EventDAO {
 
