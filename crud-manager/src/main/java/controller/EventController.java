@@ -19,7 +19,7 @@ import model.dao.DAOFactory;
 @SuppressWarnings("serial")
 @WebServlet(urlPatterns = { "/events", "/event/form", "/event/insert", "/event/update", "/event/delete" })
 public class EventController extends HttpServlet {
-
+// o do get é o metodo chamado quando o servidor recebe uma requisição http get, ele q vai definir a ação a ser tomada com base na URL solicitada.
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -47,7 +47,7 @@ public class EventController extends HttpServlet {
 			ControllerUtil.forward(req, resp, "/events.jsp");
 		}
 	}
-
+		// quase a mesma coisa do get, mas aqui controla os metodos de insercao updt e delete.
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
